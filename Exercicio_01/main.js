@@ -1,16 +1,16 @@
 function checaIdade(idade){
-    return new Promise(function(res, rej){
+    return new Promise(function(resolve, reject){
         function exec(){ 
             if (idade >= 18) 
-                res();
+                resolve();
              else  
-                rej(); 
+                reject(); 
         }
         setTimeout(exec, 2 * 1000);
     });
 }
 
-checaIdade(13)
+checaIdade(25)
     .then(function (){
         console.log('É maior de idade');
     })
