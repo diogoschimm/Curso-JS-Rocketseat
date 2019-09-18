@@ -6,7 +6,7 @@ Crie uma função que recebe a idade de um usuário e retorna uma Promise que de
 segundos retornará se usuário é maior ou não que 18 anos. Se o usuário ter mais que 18 anos de
 idade o resultado deve cair no .then, caso contrário, no .catch
 
-
+```js
 function checaIdade(idade) { 
  // Retornar uma promise 
 } 
@@ -17,7 +17,7 @@ checaIdade(20)
  .catch(function() { 
    console.log("Menor que 18"); 
  }); 
- 
+ ```
 
  
 ## 2º exercício
@@ -45,7 +45,7 @@ A partir do resultado do exemplo anterior adicione um indicador de carregamento 
 da lista apenas enquanto a requisição estiver acontecendo:
 
 <li>Carregando...</li>
-
-
+  
+  
 Além disso, adicione uma mensagem de erro em tela caso o usuário no Github não exista.
 *Dica: Quando o usuário não existe, a requisição irá cair no .catch com código de erro 404*
