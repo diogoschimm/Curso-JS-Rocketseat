@@ -27,11 +27,14 @@ URL abaixo) os dados de repositórios do usuário e mostrá-los em tela:
 URL de exemplo: https://api.github.com/users/diogoschimm/repos
 Basta alterar "diego3g" pelo nome do usuário
 
+```html
 <input type="text" name="user"> 
 <button onclick="">Adicionar</button>
+```
 
 Depois de preencher o input e adicionar, a seguinte lista deve aparecer abaixo:
 
+```html
 <ul> 
  <li>repo1</li> 
  <li>repo2</li> 
@@ -39,13 +42,15 @@ Depois de preencher o input e adicionar, a seguinte lista deve aparecer abaixo:
  <li>repo4</li> 
  <li>repo5</li> 
 </ul>
+```
 
 ## 3º exercício
 A partir do resultado do exemplo anterior adicione um indicador de carregamento em tela no lugar
 da lista apenas enquanto a requisição estiver acontecendo:
 
+```html
 <li>Carregando...</li>
-  
+  ```
   
 Além disso, adicione uma mensagem de erro em tela caso o usuário no Github não exista.
 *Dica: Quando o usuário não existe, a requisição irá cair no .catch com código de erro 404*
